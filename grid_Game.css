@@ -1,0 +1,153 @@
+.container1 {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    border-radius: 5px;
+  }
+
+  .item0 {
+    background-color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 4px;
+    border-radius: 5px;
+  }
+
+  body {
+    background: black;
+  }
+
+  .container2 {
+    height: 300px;
+    width: 300px;
+    border: 5px solid rgb(116, 114, 114);
+    background-color: rgb(65, 99, 100);
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(5, 60px);
+    place-items: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+  }
+
+  .item {
+
+    height: 50px;
+    width: 50px;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+    font-size: 0px;
+  }
+
+  #item15{
+    font-size: 0px;
+    background-color: #416364;
+  }
+
+  #item22,
+  #item23,
+  #item24,
+  #item32,
+  #item33,
+  #item34,
+  #item42,
+  #item43,
+  #item44 {
+    border: 9px solid black;
+  }
+
+  #item11,
+  #item12,
+  #item13,
+  #item14,
+  #item15,
+  #item21,
+  #item25,
+  #item31,
+  #item35,
+  #item41,
+  #item45,
+  #item51,
+  #item52,
+  #item53,
+  #item54,
+  #item55 {
+    height: 54px;
+    width: 55px;
+    border-radius: 13px 13px 13px 13px;
+  }
+
+  .line1 {
+    border: none;
+    background: grey;
+    margin-top: 20em;
+  }
+
+
+
+  .btn {
+    font-size: 35px;
+    background: none;
+    background-color: rgb(189, 229, 255);
+    border: 6px solid rgb(255, 251, 0);
+    border-radius: 12px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    cursor: pointer;
+    transition: 0.6s;
+    margin-top: 0%;
+    margin-left: 70%;
+
+  }
+
+  .btn:hover {
+    background-color: rgb(38, 243, 19);
+    transform: scale(1.1);
+  }
+
+  .text {
+    color: chartreuse;
+
+  }
+
+  .line2 {
+    display: block;
+    margin-top: 11em;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  p{
+    background: white;
+    display: inline-flex;
+    font-size: 35px;
+    height: 40px;
+    width: 95px;
+    border-radius: 10px;
+    text-align: right;
+    margin-top: 18%;
+    margin-left: 73%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+  }
+  .move{
+  background: white;
+  display: block;
+  font-size: 31px;
+  height: 36px;
+  width: 110px;
+  border-radius: 5px;
+  margin-top: 4%;
+  margin-right: 75%;
+  margin-left: 72%;
+  align-content: center;
+  }
