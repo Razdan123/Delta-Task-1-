@@ -1,19 +1,6 @@
 var items = document.querySelectorAll('.item');
 
-// for (var i = 0; i < items.length; i++) {
-//     var colors = ['red', 'green', 'blue', 'orange', 'yellow', 'white'];
-//     items[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-// }
-
-
 var item1 = document.querySelectorAll('.item0');
-
-// for (var i = 0; i < item1.length; i++) {
-//     var colors = ['red', 'green', 'blue', 'orange', 'yellow', 'white'];
-//     item1[i].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-// }
-
-
 
 const startingMinutes = 0;
 let time = startingMinutes * 60;
@@ -36,10 +23,7 @@ for (let k = 0; k < solgrid; k++) {
 
     var colors = ['red', 'green', 'blue', 'orange', 'yellow', 'white'];
     item1[k].style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-
-
 }
-
 
 
 const maingrid = items.length;
@@ -51,11 +35,9 @@ for (let i = 0; i < items.length; i++) {
 };
 
 items[12].style.backgroundColor = "#416364";
-//console.log(document.getElementById('item11').style.backgroundColor);
-
 
 for (let i = 0; i < maingrid; i++) {
-        //var empty = document.getElementById('item33');
+
         var empty = document.getElementById('item33');
         console.log(empty.style.backgroundColor);
         var moves = 0;
@@ -64,9 +46,6 @@ for (let i = 0; i < maingrid; i++) {
 
     function swapping() {
 
-       // var empty = document.getElementById('item33');
-        //console.log(empty.style.backgroundColor);
-
 
         if (i + 1 < items.length && items[i + 1] === empty) {
             console.log(items[i + 1]);
@@ -74,8 +53,7 @@ for (let i = 0; i < maingrid; i++) {
              items[i].style.backgroundColor = "#416364";
              empty = items[i];
              moves++;
-            //  console.log(moves);
-            //  document.getElementsByClassName("move").textContent = `moves: ${moves}`;
+
         }
         console.log(moves);
         document.getElementById('inc').textContent = `move:${moves}`;
@@ -126,9 +104,8 @@ for (let i = 0; i < 25; i++) {
         items[18].style.backgroundColor === item1[8].style.backgroundColor &&
         items[19].style.backgroundColor === item1[9].style.backgroundColor) {
 
-        function win() {
             document.getElementById('timer').textContent = "You WON!";
-        }
+        
     }
 }
 
